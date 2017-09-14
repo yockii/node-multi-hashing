@@ -5,7 +5,8 @@
     node-gyp configure
     node-gyp build --debug
 */
-var mh = require('./build/Debug/multihashing.node');
+// var mh = require('./build/Debug/multihashing.node');
+var mh = require('./build/Release/multihashing.node');
 var crypto = require('crypto');
 
 // this needs more work... I need a something to pass into these hashers and get back and assert..
@@ -21,6 +22,10 @@ var headerBuffer = serializeHeader(
     }, 
     merkleTree.toString('hex'), nTime, nonce
 );
+
+console.log("Testing x14hcash");
+console.log(mh.x14hcash(Buffer.from('1234test1234test1234test1234dasd')));
+
 console.log("Testing ScryptN");
 //console.log(merkleTree.toString('hex'));
 //console.log(headerBuffer.toString('hex'));

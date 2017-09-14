@@ -19,6 +19,7 @@
                 "shavite3.c",
                 "cryptonight.c",
                 "x13.c",
+                "x14hcash.c",# x14hcash
                 "boolberry.cc",
                 "nist5.c",
                 "sha1.c",
@@ -40,6 +41,7 @@
                 "sha3/sph_skein.c",
                 "sha3/sph_whirlpool.c",
                 "sha3/sph_shabal.c",
+                "sha3/sm3.c", # sm3
                 "sha3/hamsi.c",
                 "crypto/oaes_lib.c",
                 "crypto/c_keccak.c",
